@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+header {
+    padding: 20px;
+    font-size: 2em;
+}
+
+#task-section {
+    margin-top: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    background: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.high-priority {
+    color: red;
+}
+
+.medium-priority {
+    color: orange;
+}
+
+.low-priority {
+    color: green;
+}
+
+.delete-btn, .edit-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+}
+
+.edit-btn {
+    background: #ffcc00;
+    border: none;
+}

@@ -72,3 +72,19 @@ li {
     background: #ffcc00;
     border: none;
 }
+
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

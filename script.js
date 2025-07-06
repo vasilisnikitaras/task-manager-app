@@ -78,6 +78,23 @@ function loadTasks() {
             <button class="edit-btn" onclick="editTask(this)">Edit</button>
             <button class="delete-btn" onclick="deleteTask(this)">Delete</button>
         `;
+
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+  const labels = {
+    en: ["Enter task", "Low Priority", "Medium Priority", "High Priority", "Add Task", "Show Upcoming", "Show Completed"],
+    fr: ["Entrer une tâche", "Priorité basse", "Priorité moyenne", "Priorité haute", "Ajouter tâche", "À venir", "Terminées"]
+  };
+  let lang = document.body.dataset.lang === "fr" ? "en" : "fr";
+  document.body.dataset.lang = lang;
+
+  document.getElementById('task-input').placeholder = labels[lang][0];
+  const options = document.querySelectorAll('#task-priority option');
+  options.forEach((el, i) => el.textContent = labels[lang][i + 1]);
+  const buttons = document.querySelectorAll('#add-task, #show-upcoming, #show-completed');
+  buttons.forEach((btn, i) => btn.textContent = labels[lang][i + 4]);
+  document.getElementById('lang-toggle').textContent = lang === "en" ? "FR 🇫🇷" : "EN 🇺🇸";
+});
+
         taskList.appendChild(listItem);
     });
 }

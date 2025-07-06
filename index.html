@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager App</title>
 
-
-    
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-<body>
 
-    <button id="theme-toggle">🌞 Light Mode</button>
-
-
-<button id="lang-toggle">FR 🇫🇷</button>
 <body data-lang="en">
+  <!-- Control Panel -->
+  <div class="controls">
+    <button id="theme-toggle">🌞 Light Mode</button>
+    <button id="lang-toggle">FR 🇫🇷</button>
+    <button onclick="window.location.href='https://vasilisnikitaras.github.io/vasilis-portfolio/'">
+      Back to Home
+    </button>
+  </div>
 
-    
-<button onclick="window.location.href='https://vasilisnikitaras.github.io/vasilis-portfolio/'">
-    Back to Home
-</button>
+  <!-- Header -->
+  <header>
+    <h1>Task Manager</h1>
+  </header>
 
-<!--<a href="https://vasilisnikitaras.github.io/task-manager/" target="_blank">View Project</a> -->
+  <!-- Task Input Section -->
+  <section id="task-section">
+    <input type="text" id="task-input" placeholder="Enter task" />
+    <input type="date" id="task-date" />
+    <select id="task-priority">
+      <option value="low">Low Priority</option>
+      <option value="medium">Medium Priority</option>
+      <option value="high">High Priority</option>
+    </select>
+    <button id="add-task">Add Task</button>
+    <button id="show-upcoming">Show Upcoming</button>
+    <button id="show-completed">Show Completed</button>
 
+    <ul id="task-list"></ul>
+  </section>
 
-    <header>
-        <h1>Task Manager</h1>
-    </header>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Created by Vasileios Nikitaras. All rights reserved.</p>
+  </footer>
 
-    <section id="task-section">
-        <input type="text" id="task-input" placeholder="Enter task">
-        <input type="date" id="task-date">
-        <select id="task-priority">
-            <option value="low">Low Priority</option>
-            <option value="medium">Medium Priority</option>
-            <option value="high">High Priority</option>
-        </select>
-        <button id="add-task">Add Task</button>
-        <button id="show-upcoming">Show Upcoming</button>
-        <button id="show-completed">Show Completed</button>
+  <!-- Script -->
+  <script src="script.js"></script>
 
-        <ul id="task-list"></ul>
-    </section>
-
-<p>© 2025 Created by Vasileios Nikitaras. All rights reserved.</p>
-       <!-- <button id="scrollTopBtn">↑ Back to Top</button> -->
-    </footer>
-    
-    <script src="script.js"></script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7384081751053780"
-     crossorigin="anonymous"></script>
-<!-- VasiVerse_ContentAds_2 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7384081751053780"
-     data-ad-slot="6952267561"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    
+  <!-- Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7384081751053780"
+    crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-7384081751053780"
+    data-ad-slot="6952267561"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 </body>
 </html>

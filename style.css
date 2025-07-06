@@ -188,3 +188,47 @@ h1 {
     padding: 0.5rem;
   }
 }
+
+
+input,
+select,
+button {
+  margin-top: 0.3rem;
+}
+
+#task-list {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+footer, p {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+button:active {
+  background-color: #3a4fb1;
+  transform: scale(0.98);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  input, select, button {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #444;
+  }
+
+  h1 {
+    color: #bb86fc;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}

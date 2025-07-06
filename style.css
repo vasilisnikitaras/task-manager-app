@@ -285,3 +285,23 @@ body.dark-theme {
 .dark-theme .completed {
   color: #777;
 }
+
+/* Consistent input + select styling */
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+  height: 2.6rem;
+  vertical-align: middle;
+}
+
+
+button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  height: 2.6rem;
+  cursor: pointer;
+}

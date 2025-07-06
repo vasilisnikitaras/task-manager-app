@@ -108,3 +108,22 @@ button {
   font-size: 1rem;
   padding: 0.75rem;
 }
+
+/* === Mobile Enhancements === */
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 600px;
+  margin-inline: auto;
+  background-color: #fafafa;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}

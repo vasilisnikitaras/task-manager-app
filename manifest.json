@@ -20,3 +20,8 @@
   ]
 }
 
+{
+  "short_name": "TaskManager",
+  "theme_color": "#005f73",
+  "orientation": "portrait"
+}

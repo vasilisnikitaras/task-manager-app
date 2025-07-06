@@ -259,3 +259,29 @@ body {
     color: #777;
   }
 }
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-theme input,
+.dark-theme select,
+.dark-theme button {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.dark-theme h1 {
+  color: #bb86fc;
+}
+
+.dark-theme .edit-btn,
+.dark-theme .delete-btn {
+  background-color: #2b2b2b;
+  color: #ddd;
+}
+
+.dark-theme .completed {
+  color: #777;
+}

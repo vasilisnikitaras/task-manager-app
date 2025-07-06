@@ -150,3 +150,41 @@ button {
     font-size: 1.5rem;
   }
 }
+
+/* === Refined Mobile UI Tweaks === */
+body {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  border-radius: 6px;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+#task-section {
+  margin-top: 1rem;
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}

@@ -102,23 +102,37 @@ function applyLanguage(lang) {
   document.getElementById("lang-toggle").textContent = lang === "en" ? "FR 🇫🇷" : "EN 🇺🇸";
 }
 
+// === Theme Toggle with Persistence ===
+function applyTheme(theme) {
+  document.body.classList.toggle("dark-theme", theme === "dark");
+  localStorage.setItem("theme", theme);
+  document.getElementById("theme-toggle").textContent =
+    theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode";
+}
+
 // === Initialization ===
 window.addEventListener("DOMContentLoaded", () => {
-  // Restore saved language
+  // Language Setup
   const savedLang = localStorage.getItem("lang") || "en";
   applyLanguage(savedLang);
 
-  // Language toggle listener
   document.getElementById("lang-toggle").addEventListener("click", () => {
     const currentLang = document.body.dataset.lang;
     const nextLang = currentLang === "en" ? "fr" : "en";
     applyLanguage(nextLang);
   });
 
-  // Load tasks after setting language
-  loadTasks();
+  // Theme Setup
+  const savedTheme = localStorage.getItem("theme") || "light";
+  applyTheme(savedTheme);
 
-  // Task interactions
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const newTheme = document.body.classList.contains("dark-theme") ? "light" : "dark";
+    applyTheme(newTheme);
+  });
+
+  // Load tasks and event listeners
+  loadTasks();
   document.getElementById("add-task").addEventListener("click", addTask);
   document.getElementById("show-upcoming").addEventListener("click", filterUpcoming);
   document.getElementById("show-completed").addEventListener("click", filterCompleted);

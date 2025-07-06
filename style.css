@@ -141,3 +141,12 @@ button {
   font-size: 0.95rem;
   margin-top: 0.4rem;
 }
+
+@media (max-width: 400px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
